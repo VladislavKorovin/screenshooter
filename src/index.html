@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row align">
+        <div class="col-10">
+          <H2>BPM-Client</H2>
+        </div>
+        <div class="col-2">
+          <button onclick="closeWindow()" class="transition close-button position-absolute top-0 end-0" id="close"></button>
+        </div>
+      </div>
+        <form class="" action="index.html" method="post">
+          <p><label for="email">Введите вашу почту<br/></label>
+            <input class="input-fild no-borders" id="email" type="text" name="" value=""></p>
+          <p><label for="Title">Краткое описание<br/></label>
+            <input class="input-fild no-borders" id="title" type="text" name="" value=""></p>
+          <p> <label for="fulltext">Описание<br/></label>
+            <textarea class="text-fild no-borders text-fild" id="fulltext" type="text" name="" value=""></textarea>
+          </p>
+        </form>
+        <div class="row">
+          <!--screenshot btn-->
+          <div class="col-2">
+            <div class="mini-btn transition" id="screentest" onclick="new Audio('scr_sound.mp3').play();">
+              <img class="mini-img" src="img/screenshot.png" alt="">
+            </div>
+          </div>
+          <!--open file btn-->
+          <div class="col-2">
+            <input name="file" type="file" name="file"  class="input input__file" multiple>
+              <label id="upload" for="input__file" class="mini-btn">
+                 <span><img class="input__file-icon"  width="25"></span>
+                 <span class="input__file-button-text"></span>
+              </label>
+          </div>
+          <div class="col-2 move-btn">
+            <div class="end-button transition" id="submit">
+              <p class="text-in-sentre">Создать заявку</p>
+            </div>
+          </div>
+        </div>
+</div>
+  <script>window.$ = window.jQuery = require('jquery');</script>
+  <script type="text/javascript" src="test.js"></script>
+  <script src='./renderer.js'></script>
+<!--Bootstrap-->
+  </body>
+</html>
